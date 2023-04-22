@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/bestrs/course.best.rs
+    - /bin/cp -r * $DEPLOYPATH
