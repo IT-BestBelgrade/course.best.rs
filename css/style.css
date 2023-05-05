@@ -22,17 +22,18 @@ FACEBOOK: https://www.facebook.com/themefisher
 */
 /*=== MEDIA QUERY ===*/
 
-@import url("https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Archivo|Quattrocento+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600");
 
 :root {
-  --Darkest: #1d2024;
-  --Dark: #00282c;
-  --Mid: #3d444a;
-  --Light: #d1dedd;
-  --OffWhite: #afbac4;
-  --Acc1: #91cabf;
-  --Acc2: #e4eef0;
+  --Darkest: #1a2541;
+  --Dark: #e5e23f;
+  --Mid: #fefefe;
+  --Light: #fefefe;
+  --OffWhite: #1a2541;
+  --Acc1: #fefefe;
+  --Acc2: #1a2541;
+  --New: #e8e9eb;
 }
 
 html {
@@ -42,7 +43,7 @@ html {
 
 body {
   background-color: var(--Mid);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Archivo", sans-serif;
   color: var(--OffWhite);
   -webkit-font-smoothing: antialiased;
   position: relative;
@@ -55,12 +56,12 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Archivo", sans-serif;
   color: var(--OffWhite);
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Archivo", sans-serif;
 }
 
 /*=================================================================
@@ -76,6 +77,18 @@ p {
   color: #fff;
   background: var(--Acc1);
 }
+.novaPozadina {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+ }
+ 
+ img {
+   max-width: 100%;
+   max-height:100%;
+ }
+ 
 
 ol,
 ul {
@@ -136,8 +149,8 @@ a:hover {
 
 .btn-transparent:hover,
 .btn-transparent:focus {
-  background-color: var(--Acc1);
-  border-color: var(--Acc1) !important;
+  background-color: var(--Acc2);
+  border-color: var(--Acc2) !important;
   color: #fff;
 }
 
@@ -173,30 +186,48 @@ a:hover {
   color: #ddd;
 }
 
+/*#box {
+  background-color: white;
+  width: 2px;
+  height: auto;
+  padding: 25px;
+  border: 5px solid white;
+  margin: 0px;
+  border-radius: 25px;
+}*/
+
 .border {
-  border-top: 2px solid rgba(236, 239, 241, 0.07);
+  border-top: 2px solid var(--Darkest);
   height: 1px;
   margin: 15px auto 0;
   position: relative;
   width: 30%;
-  /* background-color: #fff; */
+  background-color: var(--Darkest); 
 }
 .borderdark {
-  border-top: 2px solid rgba(236, 239, 241, 0.07);
+  border-top: 2px solid var(--Darkest);
   height: 1px;
   margin: 15px auto 0;
   position: relative;
   width: 30%;
-  /* background-color: #fff; */
-  background-color: var(--Mid);
+  background-color: #fff; 
+  background-color: var(--Darkest);
 }
 .border1 {
-  border-top: 1px solid rgba(236, 239, 241, 0.07);
+  border-top: 1px solid var(--Darkest);
   height: 0px;
   margin: 20px auto 15px;
   position: relative;
   width: 75%;
-  background-color: #fff;
+  /*background-color: #fff;*/
+}
+.border2 {
+  border-top: 1px solid var(--Darkest);
+  height: 0px;
+  margin: 10px auto 5px; 
+  position: relative;
+  width: 35%;
+  /*background-color: #fff;*/
 }
 
 /* .border:before {
@@ -224,7 +255,7 @@ a:hover {
 } */
 
 .color {
-  color: #6cb670;
+  color: var(--Darkest);
 }
 
 .sub-title {
@@ -243,11 +274,12 @@ a:hover {
 }
 
 .bg-one {
-  background-color: var(--Dark);
+  background-color: var(--New);
 }
 
 .bg-dark {
   background: #242930;
+ 
 }
 
 .parallax-section {
@@ -510,7 +542,7 @@ a:hover {
   color: var(--Acc2);
 }
 .title h2 .colordark {
-  color: var(--Mid);
+  color: var(--Acc2);
 }
 .title p .colordark {
   color: var(--Mid);
@@ -1074,8 +1106,8 @@ a:hover {
   background-color: transparent;
   margin: 46.19px auto 60px;
   padding: 10px 0;
-  border-left: 3px solid var(--Acc1);
-  border-right: 3px solid var(--Acc1);
+  border-left: 3px solid var(--Acc2);
+  border-right: 3px solid var(--Acc2);
   font-size: 50px;
   -webkit-transform: translateZ(0px);
   transform: translateZ(0px);
@@ -1101,14 +1133,14 @@ a:hover {
 
 .icon-box:before {
   top: -56.5685px;
-  border-top: 4px solid var(--Acc1);
-  border-right: 4px solid var(--Acc1);
+  border-top: 4px solid var(--Acc2);
+  border-right: 4px solid var(--Acc2);
 }
 
 .icon-box:after {
   bottom: -56.5685px;
-  border-bottom: 4px solid var(--Acc1);
-  border-left: 4px solid var(--Acc1);
+  border-bottom: 4px solid var(--Acc2);
+  border-left: 4px solid var(--Acc2);
 }
 
 .about .block h3 {
@@ -1120,30 +1152,36 @@ a:hover {
 ==================================================================*/
 .about-2 .content-block {
   padding: 35px 40px;
+  
 }
 
 @media (max-width: 768px) {
   .about-2 .content-block {
     padding: 40px 15px;
+    
   }
 }
 
 .about-2 .content-block .media {
   margin-top: 25px;
+  
 }
 
 .about-2 .content-block .media .pull-left {
   padding-right: 15px;
+ 
 }
 
 .about-2 .content-block .media i {
   font-size: 30px;
   color: var(--Acc1);
+ 
 }
 
 .about-2 .content-block .media h4 {
   font-size: 16px;
   font-weight: 600;
+  
 }
 
 /*=================================================================
@@ -1157,8 +1195,11 @@ a:hover {
 
 .call-to-action .container {
   padding: 100px 70px;
-  background-color: rgba(37, 37, 37, 0.815);
+  background-color: #1a2541;
+  border-radius: 25px;
+  opacity: 0.8;
 }
+
 
 .call-to-action h2 {
   font-weight: 700;
@@ -1181,7 +1222,7 @@ a:hover {
 }
 
 .boldAcc b {
-  color: var(--Acc1);
+  color: var(--OffWhite);
 }
 /*=================================================================
  Call To Action 2
@@ -1441,11 +1482,15 @@ PRIJAVA
 
 .member-photo:hover img {
   -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 
 .member-photo img {
   transition: all 0.4s ease 0s;
+  
+}
+#okretanje {
+  transform: scalex(-1);
 }
 
 @media (max-width: 768px) {
@@ -1486,7 +1531,7 @@ PRIJAVA
 
 .member-photo .mask ul li a:hover {
   background-color: #fff;
-  color: var(--Acc1);
+  color: var(--Acc2);
   border: 1px solid transparent;
 }
 
@@ -1897,7 +1942,7 @@ PRIJAVA
 }
 
 .social-icon ul li:hover a {
-  background-color: var(--Acc1);
+  background-color: var(--Dark);
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
@@ -1911,7 +1956,7 @@ PRIJAVA
 }
 
 .social-icon ul li a {
-  background-color: var(--Darkest);
+  background-color: var(--Darkestkest);
   border: 1px solid transparent;
   display: block;
   height: 70px;
@@ -1958,7 +2003,7 @@ PRIJAVA
 }
 
 #scrollUp {
-  border: 1px solid #4e595f;
+  border: 1px solid var(--Acc2);
   bottom: 15px;
   color: #fff;
   display: none;
@@ -1969,8 +2014,8 @@ PRIJAVA
 }
 
 #scrollUp:hover {
-  background-color: var(--Acc1);
-  border: 1px solid var(--Acc1);
+  background-color: var(--Acc2);
+  border: 1px solid var(--Acc2);
 }
 
 /*=================================================================
