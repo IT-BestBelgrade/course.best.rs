@@ -329,7 +329,7 @@ a:hover {
 
 .btn-main {
   background: var(--Acc2);
-  color: var(--Mid);
+  color: var(--Acc1);
   display: inline-block;
   font-size: 17px;
   letter-spacing: 1px;
@@ -339,7 +339,7 @@ a:hover {
 }
 
 .btn-main:hover {
-  background: var(--Mid);
+  background: var(--Dark);
   color: #fff;
 }
 
