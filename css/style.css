@@ -740,7 +740,7 @@ a:hover {
 
 /* Media query for iPhones */
 @media only screen and (max-width: 480px) {
-  test-class {
+  .test-class {
     background-image: url('/images/team/ct23-iphone.jpg');
   }
 }
