@@ -729,10 +729,19 @@ a:hover {
   /*background-position: 50% 50%;*/
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .bg-2 {
-    /*background-position: 50% 50%;*/
-    width: 100%;
+    background-position: 60% 50%;
+    
+  }
+}
+
+
+
+/* Media query for iPhones */
+@media only screen and (max-width: 480px) {
+  test-class {
+    background-image: url('/images/team/ct23-iphone.jpg');
   }
 }
 
@@ -745,7 +754,7 @@ a:hover {
   align-items: center;
   overflow: hidden;
 }
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
   .hero-area {
     background-position: 60% 50%;
   }
