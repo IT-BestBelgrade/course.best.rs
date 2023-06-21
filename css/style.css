@@ -726,12 +726,12 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /*background-position: 50% 50%;*/
+  background-position: center;
 }
 
 @media only screen and (max-width: 768px) {
   .bg-2 {
-    background-position: 60% 50%;
+    background-position: center;
     
   }
 }
@@ -739,11 +739,11 @@ a:hover {
 
 
 /* Media query for iPhones */
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {
   .test-class {
     background-image: url('/images/team/ct23-iphone.jpg');
   }
-}
+}*/
 
 .hero-area {
   background-size: cover;
@@ -756,7 +756,7 @@ a:hover {
 }
   @media (max-width: 768px) {
   .hero-area {
-    background-position: 60% 50%;
+    background-position: center;
   }
 }
 
@@ -1902,6 +1902,10 @@ PRIJAVA
   .comment-reply-form .btn-main {
     font-size: 14px;
   }
+}
+
+#vest {
+  color: var(--Acc2) ;
 }
 
 /*=================================================================
