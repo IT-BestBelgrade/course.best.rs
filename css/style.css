@@ -70,12 +70,12 @@ p {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: var(--Acc1);
+  background: var(--Acc2);
 }
 
 ::selection {
   color: #fff;
-  background: var(--Acc1);
+  background: var(--Acc2);
 }
 
  img {
